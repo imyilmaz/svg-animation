@@ -1,0 +1,200 @@
+/* reset */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+html,
+body,
+div,
+input,
+textarea,
+select,
+span,
+a,
+button,
+table,
+tr,
+td,
+th,
+ul,
+ol,
+li,
+button {
+  outline: none;
+  outline-color: transparent;
+  outline-width: 0;
+  outline-style: none;
+  outline-offset: initial;
+  font-family: var(--fo);
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:focus,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* google icons */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/* base root */
+:root {
+  --open-sans: "Open Sans", sans-serif;
+}
+
+/* general */
+body {
+  font-family: var(--open-sans);
+  overflow-x: hidden;
+}
+
+body {
+  background: #000;
+}
+
+.svg svg.svg-1 {
+  width: 10rem;
+  height: 10rem;
+}
+.svg svg.svg-1 path {
+  stroke-dasharray: 2520;
+  stroke-dashoffset: 2520;
+  stroke-width: 40;
+  -webkit-animation: svg 10s linear infinite both;
+          animation: svg 10s linear infinite both;
+  stroke: #ff8c00;
+}
+.svg svg.svg-2 text {
+  stroke-dasharray: 1650;
+  stroke-dashoffset: 1650;
+  stroke-width: 10;
+  stroke: #d7c200;
+  -webkit-animation: svg2 5s linear infinite both;
+          animation: svg2 5s linear infinite both;
+}
+.svg svg.svg-3 text {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  stroke-width: 1;
+  stroke: #00c9d7;
+  -webkit-animation: svg2 20s linear infinite both;
+          animation: svg2 20s linear infinite both;
+}
+
+.icon {
+  color: rgb(225, 0, 176);
+}
+.icon span {
+  font-size: 40rem;
+  pointer-events: none;
+}
+.icon span::-moz-selection {
+  background: transparent;
+}
+.icon span::selection {
+  background: transparent;
+}
+
+@-webkit-keyframes svg {
+  0% {
+    stroke-dasharray: 2520;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 2520;
+    stroke-dashoffset: 2520;
+  }
+  100% {
+    stroke-dasharray: 2520;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes svg {
+  0% {
+    stroke-dasharray: 2520;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 2520;
+    stroke-dashoffset: 2520;
+  }
+  100% {
+    stroke-dasharray: 2520;
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes svg2 {
+  0% {
+    stroke-dasharray: 1650;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 1650;
+    stroke-dashoffset: 1650;
+  }
+  100% {
+    stroke-dasharray: 1650;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes svg2 {
+  0% {
+    stroke-dasharray: 1650;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 1650;
+    stroke-dashoffset: 1650;
+  }
+  100% {
+    stroke-dasharray: 1650;
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes svg3 {
+  0% {
+    stroke-dasharray: 95;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+  }
+  100% {
+    stroke-dasharray: 95;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes svg3 {
+  0% {
+    stroke-dasharray: 95;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+  }
+  100% {
+    stroke-dasharray: 95;
+    stroke-dashoffset: 0;
+  }
+}/*# sourceMappingURL=global.css.map */

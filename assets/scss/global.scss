@@ -1,0 +1,93 @@
+@import 'base';
+body{
+	background: #000;
+}
+.svg{
+	svg{
+		&.svg-1{ 
+			width: 10rem;
+			height: 10rem;
+			path{ 
+				stroke-dasharray: 2520;
+				stroke-dashoffset: 2520;
+				stroke-width: 40;
+				animation: svg 10s linear infinite both;
+				stroke: #ff8c00;
+			}
+		}
+		&.svg-2{
+			text{
+				stroke-dasharray: 1650;
+				stroke-dashoffset: 1650;
+				stroke-width: 10;
+				stroke: #d7c200;
+				animation: svg2 5s linear infinite both;
+			}
+		}
+		&.svg-3{
+			text{
+				stroke-dasharray: 0;
+				stroke-dashoffset: 0;
+				stroke-width: 1;
+				stroke: #00c9d7;
+				animation: svg2 20s linear infinite both;
+			}
+		}
+	}
+}//svg
+
+.icon{
+	color: rgb(225, 0, 176);
+	span{
+		font-size: 40rem;
+		pointer-events: none;
+		&::selection{
+			background: transparent;
+		}
+	}
+}
+
+@keyframes svg {
+	0%{ 
+		stroke-dasharray: 2520;
+		stroke-dashoffset: 0;
+	}
+	50%{ 
+		stroke-dasharray: 2520;
+		stroke-dashoffset: 2520;
+	}
+	100%{ 
+		stroke-dasharray: 2520;
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes svg2 {
+	0%{ 
+		stroke-dasharray: 1650;
+		stroke-dashoffset: 0;
+	}
+	50%{ 
+		stroke-dasharray: 1650;
+		stroke-dashoffset: 1650;
+	}
+	100%{ 
+		stroke-dasharray: 1650;
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes svg3 {
+	0%{ 
+		stroke-dasharray: 95;
+		stroke-dashoffset: 0;
+	}
+	50%{ 
+		stroke-dasharray: 95;
+		stroke-dashoffset: 95;
+	}
+	100%{ 
+		stroke-dasharray: 95;
+		stroke-dashoffset: 0;
+	}
+}
