@@ -4,29 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVG Animation || İbrahim Mesut YILMAZ</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/im.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/scss/global.css">
 </head>
 <body>
     <div class="svg">
-        <svg class="svg-1" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-            <path fill="transparent" stroke="currentColor" d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/>
-        </svg>
+        <svg class="svg-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="668.472" height="668.487" viewBox="0 0 668.472 668.487">
+            <defs>
+              <filter id="Green" x="0" y="0" width="668.472" height="668.487" filterUnits="userSpaceOnUse">
+                <feOffset input="SourceAlpha"/>
+                <feGaussianBlur stdDeviation="30" result="blur"/>
+                <feFlood flood-color="#67c75b" flood-opacity="0.902"/>
+                <feComposite operator="in" in2="blur"/>
+                <feComposite in="SourceGraphic"/>
+              </filter>
+            </defs>
+            <g transform="translate(-322.5 -205.485)">
+              <path d="M289,60h.232c126.6,0,229.236,102.633,229.236,229.236S415.84,518.47,289.236,518.47,60,415.838,60,289.234C60,162.708,162.507,60.124,289,60" transform="translate(367.5 250.502)" fill="none" stroke="#e6e6e6" stroke-linecap="round" stroke-miterlimit="10" stroke-width="10"/>
+              <g transform="matrix(1, 0, 0, 1, 322.5, 205.49)" filter="url(#Green)">
+                <path class="svg-animate" d="M289,60h.232c126.6,0,229.236,102.633,229.236,229.236S415.84,518.47,289.236,518.47,60,415.838,60,289.234C60,162.708,162.507,60.124,289,60" transform="translate(45 45.02)" fill="none" stroke="#67c75b" stroke-linecap="round" stroke-miterlimit="10" stroke-width="30"/>
+              </g>
+            </g>
+          </svg>
         <svg class="svg-2" xmlns="http://www.w3.org/2000/svg" width="1433" height="388" viewBox="0 0 1433 388">
-            <text transform="translate(1 311)" fill="none" stroke="#e8e7e7" stroke-width="1" font-size="293" font-family="AcuminPro-Black, Acumin Pro" font-weight="800">
-                <tspan x="0" y="0">EMEKTAR</tspan>
+            <text transform="translate(1 311)" fill="none" stroke="#000" stroke-width="5" font-size="200" >
+                <tspan x="0" y="0">İbrahim</tspan>
             </text>
         </svg>
         <svg class="svg-3" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
-            <text x="20" y="35" class="small">My</text>
-            <text x="40" y="35" class="heavy">cat</text>
-            <text x="55" y="55" class="small">is</text>
-            <text x="65" y="55" class="Rrrrr">Grumpy!</text>
+            <text x="10" y="35">SVG</text>
+            <text x="50" y="35">için</text>
+            <text x="25" y="55">text</text>
+            <text x="65" y="55">animasyonu!</text>
           </svg>
     </div>
-    <div class="icon">
-        <span class="material-symbols-outlined">
-            animation
-        </span>
+    
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
+    <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve"><circle stroke="red" stroke-width="2" stroke-dasharray="100" cx="17.5" cy="17.5" r="16"></circle></svg>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://github.com/imyilmaz/svg-animation">GITHUB</a>
+        <a href="">YOUTUBE</a>
+        <a href="">VERCEL</a>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper1 = new Swiper('.mySwiper', {
+            navigation: {
+                nextEl: ".mySwiper .swiper-button-next",
+                prevEl: ".mySwiper .swiper-button-prev",
+            },
+            pagination: {
+                el: '.mySwiper .swiper-pagination',
+                type: 'custom',
+                clickable: true,
+                renderCustom: function (swiper,current,total) {
+                    return '<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">'+
+                        '<circle stroke="red" stroke-width="2" stroke-dasharray="100" '+
+                        'style="stroke-dashoffset: calc((100 / ' + total + ') * ' + current + ')" cx="17.5" cy="17.5" r="16"></circle></svg>';
+                }
+            },
+        });
+        var swiper2 = new Swiper('.mySwiper2', {
+            allowTouchMove: true,
+            navigation: {
+                nextEl: ".mySwiper2 .swiper-button-next",
+                prevEl: ".mySwiper2 .swiper-button-prev",
+            },
+            pagination: {
+                el: '.mySwiper2 .swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+                renderBullet: function (index,className) {
+                    return '<span class="' + className + ' ' + className + (index + 1) + '"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35;" xml:space="preserve">'+
+                        '<circle stroke="red" stroke-width="2" stroke-dasharray="100" cx="17.5" cy="17.5" r="16"></circle></svg></span>';
+                }
+            },
+        });
+    </script>
 </body>
 </html>
