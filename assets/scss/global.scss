@@ -1,93 +1,199 @@
 @import 'base';
-body{
-	background: #000;
-}
 .svg{
+	overflow: hidden;
 	svg{
 		&.svg-1{ 
-			width: 10rem;
-			height: 10rem;
-			path{ 
-				stroke-dasharray: 2520;
-				stroke-dashoffset: 2520;
-				stroke-width: 40;
-				animation: svg 10s linear infinite both;
-				stroke: #ff8c00;
+			.svg-animate{ 
+				stroke-dasharray: 1440;
+				stroke-dashoffset: 1440;
+				animation: svg 20s linear infinite both;
 			}
 		}
 		&.svg-2{
 			text{
-				stroke-dasharray: 1650;
-				stroke-dashoffset: 1650;
-				stroke-width: 10;
-				stroke: #d7c200;
-				animation: svg2 5s linear infinite both;
+				stroke-dasharray: 850;
+				stroke-dashoffset: 850;
+				animation: svg2 10s linear infinite both;
 			}
 		}
 		&.svg-3{
 			text{
-				stroke-dasharray: 0;
-				stroke-dashoffset: 0;
-				stroke-width: 1;
-				stroke: #00c9d7;
-				animation: svg2 20s linear infinite both;
+				fill: #e7d000;
+				&:nth-child(1){
+					stroke-dasharray: 65;
+					stroke-dashoffset: 0;
+					stroke-width: .5;
+					stroke: #000000;
+					animation: svg31 10s linear infinite both;
+				}
+				&:nth-child(2){
+					stroke-dasharray: 46;
+					stroke-dashoffset: 0;
+					stroke-width: .5;
+					stroke: #000000;
+					animation: svg32 10s linear infinite both;
+				}
+				&:nth-child(3){
+					stroke-dasharray: 43;
+					stroke-dashoffset: 0;
+					stroke-width: .5;
+					stroke: #000000;
+					animation: svg33 10s linear infinite both;
+				}
+				&:nth-child(4){
+					stroke-dasharray: 71;
+					stroke-dashoffset: 0;
+					stroke-width: .5;
+					stroke: #000000;
+					animation: svg34 10s linear infinite both;
+				}
 			}
 		}
 	}
 }//svg
 
-.icon{
-	color: rgb(225, 0, 176);
-	span{
-		font-size: 40rem;
-		pointer-events: none;
-		&::selection{
-			background: transparent;
-		}
-	}
-}
 
 @keyframes svg {
 	0%{ 
-		stroke-dasharray: 2520;
-		stroke-dashoffset: 0;
-	}
-	50%{ 
-		stroke-dasharray: 2520;
-		stroke-dashoffset: 2520;
+		stroke-dasharray: 1440;
+		stroke-dashoffset: 1440;
 	}
 	100%{ 
-		stroke-dasharray: 2520;
-		stroke-dashoffset: 0;
+		stroke-dasharray: 1440;
+		stroke-dashoffset: -1440;
 	}
 }
 
 @keyframes svg2 {
 	0%{ 
-		stroke-dasharray: 1650;
-		stroke-dashoffset: 0;
+		stroke-dasharray: 850;
+		stroke-dashoffset: 850;
 	}
 	50%{ 
-		stroke-dasharray: 1650;
-		stroke-dashoffset: 1650;
+		stroke-dasharray: 850;
+		stroke-dashoffset: 0;
 	}
 	100%{ 
-		stroke-dasharray: 1650;
-		stroke-dashoffset: 0;
+		stroke-dasharray: 850;
+		stroke-dashoffset: 850;
 	}
 }
 
-@keyframes svg3 {
+@keyframes svg31 {
 	0%{ 
-		stroke-dasharray: 95;
+		stroke-dasharray: 65;
 		stroke-dashoffset: 0;
-	}
-	50%{ 
-		stroke-dasharray: 95;
-		stroke-dashoffset: 95;
 	}
 	100%{ 
-		stroke-dasharray: 95;
+		stroke-dasharray: 65;
+		stroke-dashoffset: 65;
+	}
+}
+@keyframes svg32 {
+	0%{ 
+		stroke-dasharray: 46;
 		stroke-dashoffset: 0;
+	}
+	100%{ 
+		stroke-dasharray: 46;
+		stroke-dashoffset: 46;
+	}
+}
+@keyframes svg33 {
+	0%{ 
+		stroke-dasharray: 43;
+		stroke-dashoffset: 0;
+	}
+	100%{ 
+		stroke-dasharray: 43;
+		stroke-dashoffset: 43;
+	}
+}
+@keyframes svg34 {
+	0%{ 
+		stroke-dasharray: 71;
+		stroke-dashoffset: 0;
+	}
+	100%{ 
+		stroke-dasharray: 71;
+		stroke-dashoffset: 71;
+	}
+}
+
+
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+}
+
+.mySwiper .swiper-pagination{
+	display: flex;
+	justify-content: center;
+	span{
+		width: 32px;
+		height: 32px; 
+		background: transparent !important;
+	}
+	svg{
+		width: 32px;
+		height: 32px;
+		display: block;
+		fill: transparent;
+	}
+}
+
+.mySwiper2 .swiper-pagination{
+	span{
+		width: 32px;
+		height: 32px; 
+		background: transparent !important;
+	}
+	svg{
+		width: 32px;
+		height: 32px;
+		display: block;
+		fill: transparent;
+		transition: .4s; 
+	}
+	.swiper-pagination-bullet{
+		opacity: 1;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0; 
+		svg{ 
+			display: none; 
+			circle{
+				transition: .4s; 
+			}
+		}
+		&:nth-last-child(1){
+			svg{ 
+				display: block; 
+			}
+		}
+		$total: 9;
+		@for $i from 1 through $total{
+			&.swiper-pagination-bullet#{$i}.swiper-pagination-bullet-active ~ .swiper-pagination-bullet{
+				$t2 : $total - $i;
+				svg{
+					circle{
+						stroke-dasharray: 100;
+						stroke-dashoffset: calc((100 / #{$total}) * -#{$t2});
+					}
+				}
+			}
+		}
 	}
 }
